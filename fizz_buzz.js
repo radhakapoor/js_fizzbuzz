@@ -1,5 +1,8 @@
-$(document).ready(function() {
-	for (var i = 1; i < 101; i ++) {
+
+var number = prompt('Please enter a number!');
+
+function fizzbuzz(number) {
+	for (var i = 1; i <= number; i ++) {
 		if (i % 3 == 0 && i % 5 == 0) {
 			$('#fb').append('FizzBuzz');
 			$('#fb').append('<br>');			
@@ -17,7 +20,12 @@ $(document).ready(function() {
 		}
 		
 	}
-})
+}
+
+$(document).ready(function() {
+	fizzbuzz(number);	
+});
+
 
 
 
